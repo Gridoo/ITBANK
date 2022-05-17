@@ -1,13 +1,31 @@
 * {
-  background-color: rgb(202, 202, 202);
-  border: 0;
+  font-family: "Inter", sans-serif;
 }
 .logo {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-div.p-2 {
-  margin-top: 20px;
+
+.menu li {
+  width: fit-content;
+  background-color: rgb(48, 48, 49);
+  font-size: large;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  height: 1000px;
+  text-align: center;
 }
-.header {
-  background-color: black;
+.menu li ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.menu li ul {
+  height: 40px;
+  padding: 0;
+  padding-top: 20px;
+}
+.nav {
+  padding-top: 20px;
+  margin-top: -30px;
+  width: fit-content;
 }
