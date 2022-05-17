@@ -14,13 +14,46 @@
 
   <body>
     <header>
-      <div class="row" style="margin: 0">
-        <div class="col-sm-5">MENU</div>
-        <div class="col-sm-2">
-          <img class="logo" src="logo.jpg" alt="" />
+      <div class="d-flex justify-content-around">
+        <div class="p-2">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li>
+                <button class="dropdown-item" type="button">Perfil</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">otro</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">otro</button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-sm-5">
-          <button>Iniciar sesión</button><button>Crear cuenta</button>
+        <div class="p-2">
+          <img
+            style="margin-top: -10px; width: 130px"
+            class="logo"
+            src="LOGO V2.png"
+            alt=""
+          />
+        </div>
+        <div class="p-2">
+          <button type="button" class="btn btn-outline-primary">
+            Iniciar sesión
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            Crear cuenta
+          </button>
         </div>
       </div>
     </header>
