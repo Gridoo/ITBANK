@@ -47,10 +47,9 @@ body {
   position: flex;
 }
 
-.wrapper {
-  min-height: calc(100% - 4rem);
-}
-.footer {
-  height: 4rem;
+.header {
+  height: 102px;
   background-color: #e2e2e2;
+  font-size: 40px;
+  text-align: center;
 }
