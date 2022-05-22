@@ -1,0 +1,52 @@
+html,
+body {
+  min-height: 100%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  margin: 0;
+}
+
+.imagen_div {
+  height: 180px;
+  width: 180px;
+}
+
+.p_soluciones {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.h1_soluciones {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--homemicroillustration-text-color, #121212);
+  text-align: center;
+  margin: 16px 0 8px;
+}
+
+.icons {
+  background: #f2f2f2;
+  border-radius: 12px;
+}
+
+.caca {
+  display: block;
+  max-width: 100px;
+  height: auto;
+}
+
+.card_texto {
+  align-items: center;
+  display: flex;
+}
