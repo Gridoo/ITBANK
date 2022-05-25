@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITBANK</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -68,9 +69,10 @@
               <button
                 style="margin-right: 20px; margin-top: 25px"
                 type="button"
-                class="btn btn-outline-secondary"
+                class="btn btn-outline-primary" 
+                
               >
-                Hacete cliente
+                <a style="text-decoration: none" href="Sign up.html">Hacete cliente</a> 
               </button>
             </div>
           </div>
@@ -80,34 +82,24 @@
 <!-- Carousel -->
 <div c id="demo" class="carousel slide" data-bs-ride="carousel">
 
-  <!-- Indicators/dots -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-  </div>
-
   <!-- The slideshow/carousel -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="banner1.jpg" alt="Los Angeles" class="d-block w-100">
+  <div id="carrousel-css" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="banner1.jpg" alt="Los Angeles" id="imagencarr" >
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="swiper-slide"><img src="banner2.jpg" alt="Chicago" id="imagencarr" >  
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+      </div>
+      <div class="swiper-slide"><img src="banner3.jpg" alt="New York" id="imagencarr" >
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <div class="carousel-item">
-      <img src="banner2.jpg" alt="Chicago" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="banner3.jpg" alt="New York" class="d-block w-100">
-    </div>
-  </div>
-
-  <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
 
 <!-- adicional -->
 <div class="container p-5 my-5 bg-white ">
@@ -146,5 +138,18 @@
         </div>
       </footer>
     </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+              PageTransitionEvent: "swiper-pagination",
+            },
+          });
+        </script>
   </body>
 </html>
