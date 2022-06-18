@@ -32,8 +32,9 @@
 }
 .nav {
 	padding-top: 550px;
-	margin-top: -1900px;
 	width: fit-content;
+	top: -1760px;
+	position: relative;
 }
 
 .menu li ul:hover > a {
@@ -59,12 +60,15 @@ h1 {
 	color: rgb(255, 255, 255);
 	text-shadow: 0.05em 0.05em 0.2em rgb(83, 83, 83);
 }
-
+.imagen{
+	position: absolute;
+	left: 550px;
+	top: 10px;
+}
 .yo {
 	position: absolute;
 	box-shadow: 0.1em 0.1em 1em rgb(26, 98, 255);
-	width: 25em;
-	height: 24em;
+	width: 250px;
 	left: 55em;
 	top: 1em;
 	border: 0.5em solid rgb(89, 147, 255);
