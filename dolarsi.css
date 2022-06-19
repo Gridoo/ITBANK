@@ -1,7 +1,3 @@
-#tituloh5 {
-  background-color: gray;
-}
-
 #texto1 {
   text-align: justify;
 }
@@ -21,7 +17,16 @@
   padding: 10px;
   border-radius: 4px;
 }
-
+#compra {
+  background-color: rgb(216, 216, 216);
+  size: 15px;
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px;
+  display: inline-block;
+  width: 144px;
+  margin-right: -3px;
+}
 #venta {
   background-color: rgb(216, 216, 216);
   size: 15px;
