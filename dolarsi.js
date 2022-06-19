@@ -115,7 +115,7 @@ async function getDolarData() {
     date.getMinutes() +
     "HS";
 
-  // DOLAR PROMEDIO
+  // DOLAR  PROMEDIO
 
   const dpc = document.getElementById("dpc");
   const dpv = document.getElementById("dpv");
